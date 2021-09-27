@@ -29,8 +29,8 @@ lfdGruppenwechsel=0
 [SubFilter] 70
 COMPBereiche=[Von] <= Input(0) && 
 ([Bis] == "" || [Bis] >= Input(0))
-Welche=1
-Wieviele=0
+Welche=2
+Wieviele=1
 Haupt=4
 
 [SubFilter] 142
