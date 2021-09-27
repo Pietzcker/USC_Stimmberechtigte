@@ -1,0 +1,354 @@
+Tabelle Version 2.0
+
+[Layout]
+Breite=210
+Höhe=297
+Hochformat=1
+Links=25
+Rechts=25
+Oben=25
+Unten=25
+
+Datum=1
+Seitenzahlen=1
+Laufende Nummer=0
+Gitternetzlinien=1
+Dateiname in Fußzeile=1
+Gleiche Felder untereinander=1
+
+[Datenbank]
+Container=COMPersonen
+
+[Gruppierung]
+Gruppenwechsel=
+Gruppenüberschrift=
+Gruppenfuß=
+Seitenwechsel=0
+lfdGruppenwechsel=0
+
+[SubFilter] 70
+COMPBereiche=[Von] <= Input(0) && 
+([Bis] == "" || [Bis] >= Input(0))
+Welche=1
+Wieviele=0
+Haupt=4
+
+[SubFilter] 142
+COMPStatus=(
+[Status (Nr).Nummer] >= 1
+&&
+[Status (Nr).Nummer] <= 3
+)
+&&
+(
+[Von] <= Input(0) && 
+([Bis] == "" || [Bis] >= Input(0))
+)
+Welche=1
+Wieviele=0
+Haupt=5
+
+[SubFilter] 78
+COMPersonen=EingabeSuchen("Datum","Termin der Mitgliederversammlung?",0,"","")
+Welche=0
+Wieviele=0
+Haupt=0
+
+[SubFilter] 75
+SQL-Query=EingabeSuchen("Datum","Datum der Mitgliederversammlung?",0,"","")
+Welche=0
+Wieviele=0
+Haupt=0
+
+[Feld]
+Name=Nummer.Person (Nr)
+NeuName=Person (Nr)
+Unterschrift=
+Linksbündig=0
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Adressanrede (Nr).Adressanrede
+NeuName=Adressanrede
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Titel
+NeuName=Titel
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Vorname
+NeuName=Vorname
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Name
+NeuName=Name
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=COMPStatus.Status (Nr).Status
+NeuName=Status
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=COMPBereiche.Bereich (Nr).Bereich
+NeuName=Bereich
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Alter am Stichtag
+NeuName=Alter am Stichtag
+Unterschrift=
+Linksbündig=0
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Straße/Postfach
+NeuName=Straße/Postfach
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=PLZ
+NeuName=PLZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Ort
+NeuName=Ort
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Serienbrief E-Mail Adresse
+NeuName=Serienbrief E-Mail Adresse
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Nummer
+NeuName=Nummer HZ
+Unterschrift=
+Linksbündig=0
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Adressanrede (Nr)
+NeuName=Adressanrede (Nr) HZ
+Unterschrift=
+Linksbündig=0
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Titel
+NeuName=Titel HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Vorname
+NeuName=Vorname HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Name
+NeuName=Name HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Straße/Postfach
+NeuName=Straße/Postfach HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).PLZ
+NeuName=PLZ HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Ort
+NeuName=Ort HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Feld]
+Name=Hauptzahler (Nr).Serienbrief E-Mail Adresse
+NeuName=Serienbrief E-Mail Adresse HZ
+Unterschrift=
+Linksbündig=1
+Ausblenden=1
+Summe=0
+Gruppensumme=0
+Währung=0
+WährungNull=0
+Breite=0
+Leer=
+
+[Sortieren] 0
+
+[Schriftart]
+Name=Arial
+Größe=10
+Farbe=-1
+
+[Überschrift]
+"Stimmberechtigte (Mitgliederversammlung)"
+
+[Hauptüberschrift]
+Vereinsname()
+
+[Hilfe] 465
+Liste aller Stimmberechtigten (Aktive Mitglieder, Förder- oder Ehrenmitglieder), ohne Pausierte.
+
+Diese Liste muss noch durch ein Skript aufbereitet werden, da das Stimmrecht ggf. einem Elternteil übertragen werden muss und diese nicht zusätzlich eine Stimme als evtl. Fördermitglied erhalten dürfen. 
+
+Außerdem müssen die Schnupperer aussortiert werden, da diese in ComMusic zwar zu den aktiven Mitgliedern gehören, aber natürlich nicht stimmberechtigt sind.
