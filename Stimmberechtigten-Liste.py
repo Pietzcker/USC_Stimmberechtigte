@@ -30,6 +30,8 @@ with io.StringIO(data) as infile:
     for person in csv.DictReader(infile, delimiter="\t"):
         if "Schnupperer" in person["Bereich"]: # Schnupperer werden nicht berücksichtigt
             continue
+        if person["Name"] == "":
+            continue
         person["Alter am Stichtag"] = int(person["Alter am Stichtag"])
         person["Person (Nr)"] = int(person["Person (Nr)"])
         person["Nummer HZ"] = int(person["Nummer HZ"])
